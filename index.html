@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Relax and rejuvenate at Rooted Reflexology. Explore our services, from signature reflexology to specialized raindrop techniques. Book your session today!">
+    <title>Rooted Reflexology</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=MonteCarlo&family=Play:wght@400;700&family=Sono:wght,MONO@200,0.48&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">
+                <img src="rooted-reflexology-logo.PNG" alt="Rooted Reflexology Logo">
+            </div>
+            <div class="title">
+                <h1>
+                    <span class="ephesis-regular">Rooted</span> <br>
+                    <span class="sono-extralight200">REFLEXOLOGY</span>
+                </h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="#intro">Welcome</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <div class="intro-container">
+                <div class="intro-content">
+                    <h2>Welcome</h2>
+                    <p>Relax, rejuvenate, and revitalize with our signature reflexology services. Discover a holistic
+                        approach to wellness and self-care.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image-text">
+                    <div class="about-image">
+                        <img src="about.jpeg" alt="Headshot">
+                    </div>
+                    <h2>About Me</h2>
+                    <p>Hi, I’m Nicole, and I’ve been practicing Reflexology since 2016. 
+                        With a background in Health Sciences and a deep passion for holistic healing, 
+                        I began my Reflexology journey by completing a 150-hour certification program 
+                        with Tracy McGovern at Essential Connections. Afterward, I became nationally 
+                        certified through the American Reflexology Certification Board (ARCB).</p>
+                </div>
+                <p>I’m always eager to expand my knowledge, so I’ve continued my education by 
+                    exploring additional Reflexology techniques, including Hand, Ear, and Facial 
+                    Reflexology. I also completed a 25-hour course through CARE, where I learned 
+                    specialized techniques like Raindrop Therapy, Vita Flex, the chemistry of essential oils, 
+                    and emotional release methods.</p>
+                <p>I’m truly passionate about sharing the many benefits of Reflexology and how 
+                    it can enhance overall well-being. Over the years, I’ve witnessed firsthand 
+                    how powerful Reflexology can be in reducing stress, alleviating pain, supporting 
+                    mental health, and promoting nervous system regulation.</p>
+            </div>
+        </section>
+
+        
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+        
+            <div class="service-item-with-image">
+                <div class="service-image">
+                    <img src="action2.jpeg" alt="Relaxing reflexology session">
+                </div>
+                <div class="service-item">
+                    <ul>
+                        <li>
+                            <strong class="font1">Rooted Signature Reflexology</strong> <br>
+                            <span class="price">$75.00</span> (<span class="duration">1 Hour</span>)
+                            <p>Feet, hands, ear and face reflexology available! Includes essential oils, hot washcloths, and health & lifestyle consultations.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="service-item-with-image flipped">
+                <div class="service-item">
+                    <ul>
+                        <li>
+                            <strong class="font1">Rooted Signature Raindrop</strong> <br>
+                            <span class="price">$90.00</span> (<span class="duration">1 Hour</span>)
+                            <p>Features reflexology with raindrop oils on the feet and spine, hot towel, and percussion massage.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <img src="raindrop1.jpeg" alt="Raindrop Reflexology session">
+                </div>
+            </div>
+        
+            <div class="service-item-with-image">
+                <div class="service-image">
+                    <img src="raindrop2.jpeg" alt="Original Raindrop Technique">
+                </div>
+                <div class="service-item">
+                    <ul>
+                        <li>
+                            <strong class="font1">90 Minute Raindrop <em>Original Technique</em></strong> <br>
+                            <span class="price">$120.00</span> (<span class="duration">1 hr 30 mins</span>)
+                            <p>The original version of the Raindrop Technique taught by its founder.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="booking" class="booking">
+            <h2>Book Your Session</h2>
+            <a href="https://rootedreflexology.square.site" class="booking-button" target="_blank">Book
+                Now</a><br><br><br>
+        </section>
+      
+        <section class="testimonials">
+            <div class="wrapper">
+                <button id="prev">&lt;</button>
+                <div class="testimonial-container">
+                    <p id="testimonial-text"></p>
+                    <h3 id="testimonial-name"></h3>
+                </div>
+                <button id="next">&gt;</button>
+            </div>
+        </section>
+        
+        <script>
+const testimonials = [
+    {
+        text: "Nicole creates such a warm welcoming and calming environment! Highly recommend!",
+        name: "Emilie Keeler",
+    },
+    {
+        text: "First, I rarely write reviews but this one is most definitely warranted. Nicole is amazing at her craft. The way she pairs gentle with precision pressure where it’s required never ceases to amaze me. She is a wealth of knowledge and serves from the heart. Highly recommend!",
+        name: "Michelle Fulginiti",
+    },
+    {
+        text: "The absolute best. Nicole’s intuitive and professional approach never fails to amaze me. I have been going to her for years and she never disappoints. An essential part to my wellness routine!",
+        name: "Lyssa Scott",
+    },
+    {
+        text: "Nicole from Rooted Reflexology is such a talented, passionate and knowledgeable practitioner! Any treatment with her is such a blissful experience with essential oils and good vibes!",
+        name: "Kayla Ruth",
+    },
+    {
+        text: "The care and practice of Rooted Reflexology is without equal in the world of wellness. Nicole is so dedicated to the health and well-being of her clients. She is constantly learning and certifying her craft so that she can help her patients in so many new ways. I will never seek Reflexology help from anyone else because no one is better suited or capable to give me the care I need.",
+        name: "Jeffrey Wooddy",
+    },
+    {
+        text: "Loved my session with Nicole. It was exactly what I needed and she knew where to focus. Highly recommend a session with her.",
+        name: "Travel With Laughter",
+    },
+    {
+        text: "Five stars plus. Nicole is such a light!! She provides such great services. My favorite is the facial reflexology. It’s so super relaxing. My whole family enjoys her care. It’s such great immune support!!!! Thank you, Rooted Reflexology, for such great care.",
+        name: "Miranda Miller",
+    },
+    {
+        text: "Nicole has the gift of making you feel so relaxed and comfortable. She’s always learning new techniques and knows exactly what to do to promote healing in your body.",
+        name: "Lori Bencsik",
+    },
+    {
+        text: "I had the most amazing reflexology experience with Nicole. She is so gentle and at the same time precise during treatment. You can tell she is very passionate and cares deeply about her clients’ health and wellness journeys. She shares her knowledge with you and I could not recommend her more! Will definitely be seeing her again.",
+        name: "Kiera Hendel",
+    },
+    {
+        text: "At first, I wasn’t sure how I would like reflexology, or raindrop, but Nicole made me feel so comfortable & everything was very relaxing! She even introduced me to facial reflexology which is a great add-on service! Facial reflexology is so relaxing & I add it to my appointment every time! I always feel great afterward & I look forward to my next appointment every month! Nicole is the best!!!",
+        name: "Mindy Mininger",
+    },
+    {
+        text: "I always look forward to my appointments. The atmosphere is calming. Nicole is kind and professional. It’s reassuring to ask questions and get informative answers. Having cupping available at the same appointment as reflexology is great. Highly recommend.",
+        name: "Amanda Fitser",
+    },
+    {
+        text: "My parents had gone to a reflexologist for years and were so happy with the results. How fortunate for me that when I decided to try it, Nicole's business opened up near my home. That was about 5 years ago, and I have no plans on stopping! Nicole has a great positive outlook on life and is very thorough and proficient at her profession. I always leave with happy feet!",
+        name: "Jane Yeanish",
+    },
+    {
+        text: "Have had many incredible relaxing reflexology sessions here with Nicole. She's so friendly and very experienced and professional.",
+        name: "mekjr15",
+    },
+    {
+        text: "I've been under Nicole's care for both reflexology & raindrop therapy for the past 8 years. Her skill is precise and effective and she's just a joy to work with. I always sleep so well after our sessions. She's helped with back and neck pain, ear congestion, menstrual irregularities, and digestive complaints over the years. She continues to expand her knowledge and I deeply trust her with my health.",
+        name: "Heidi Randall",
+    },
+    {
+        text: "Nicole at Rooted Reflexology is amazing in every way possible. I wasn’t sure about reflexology at first, but tried it as sometimes I don’t like a massage. Once I met Nicole and tried it—I instantly referred my entire family and they fell in love as well. This has truly been the only thing I have found to help relax me. Nicole is amazing at her craft and so knowledgeable. She will answer any questions you have, always makes you feel comfortable, and is unbelievably kind and caring. I have been coming as a regular now for a couple years every few weeks and always look forward to it!! Thank you, Nicole, for being such a light and special human!",
+        name: "Kelly Beaver",
+    }
+];
+
+        
+        let index = 0;
+        
+        function updateTestimonial() {
+            document.getElementById("testimonial-text").textContent = testimonials[index].text;
+            document.getElementById("testimonial-name").textContent = testimonials[index].name;
+        }
+        
+        document.getElementById("prev").addEventListener("click", () => {
+            index = (index - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial();
+        });
+        
+        document.getElementById("next").addEventListener("click", () => {
+            index = (index + 1) % testimonials.length;
+            updateTestimonial();
+        });
+        
+        // Initialize first testimonial
+        updateTestimonial();
+        </script>
+   
+    </main>
+
+
+
+    <footer>
+        <div class="contact">
+            <p><strong>Contact Us:</strong> <a href="tel:+12152643417">+1 215-264-3417</a> | <a
+                    href="mailto:nbencsik16@gmail.com">nbencsik16@gmail.com</a></p>
+            <p><strong>Visit Us:</strong> <a href="https://goo.gl/maps/658HarleysvillePike" target="_blank">658
+                    Harleysville Pike, Harleysville, PA 19438</a></p>
+        </div>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="#intro">Welcome</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+        <p>© 2024 Rooted Reflexology. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

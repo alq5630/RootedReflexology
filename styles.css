@@ -1,0 +1,1195 @@
+/* General Styles */
+body {
+    font-family: "Sono", monospace;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #4a403a;
+    /* Earthy dark brown */
+    background-color: #f5f5eb;
+    /* Soft beige background */
+}
+
+h1 {
+    font-family: "Ephesis", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a403a;
+}
+h2 {
+    font-family: "Ephesis", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4a403a;
+    text-align: center;
+}
+
+/* Intro section styling */
+.intro-container {
+    position: relative; /* Enables text positioning on top */
+    background-image: url("action1.jpeg"); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    padding: 4rem 2rem; /* Adds space inside the container */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    color: white; /* Makes text white for readability */
+    text-align: center; /* Centers text horizontally */
+}
+
+/* Overlay effect for better text visibility */
+.intro-container::before {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adds a semi-transparent dark overlay */
+    border-radius: 10px; /* Matches the container's rounded corners */
+    z-index: 1; /* Ensures the overlay is behind the text */
+}
+
+/* Text content styling */
+.intro-content {
+    position: relative; /* Ensures it appears above the overlay */
+    z-index: 2; /* Places text above the overlay */
+    max-width: 600px; /* Optional: Limits text width */
+    margin: 0 auto; /* Centers text content */
+}
+
+.intro-content h2 {
+    flex: 1; /* Takes one part of the space */
+    font-family: 'Ephesis', serif; /* Ensure your font choice */
+    font-size: 2.5em; /* Adjust as necessary */
+    margin: 10;
+    color: #dbd0c9; /* Match your earthy tones */
+}
+
+.intro-content p {
+    flex: 2; /* Takes two parts of the space */
+    font-family: "Sono", monospace; /* Ensure consistency */
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px;
+    color: #ccc5c0; /* Match your earthy tones */
+}
+
+/* Styling for the image */
+.intro-image img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: auto;
+    border-radius: 10px; /* Optional, adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional, adds a subtle shadow */
+    flex: 1; /* Allows the image to take up equal space */
+    max-width: 400px; /* Controls the size of the image */
+}
+
+/* Main container for the "About" section */
+.about-container {
+    padding: 2rem;
+    line-height: 1.6; /* Improves text readability */
+}
+
+/* Container for image and the first paragraph */
+.about-image-text {
+    display: flex; /* Enables side-by-side layout */
+    align-items: flex-start; /* Aligns the image with the top of the paragraph */
+    gap: 1.5rem; /* Space between the image and the text */
+    margin-bottom: 1.5rem; /* Space below the first paragraph block */
+}
+
+/* Image styling */
+.about-image img {
+    max-width: 150px; /* Limits the image width */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better aesthetics */
+}
+
+/* Styling for the rest of the text */
+.about-container p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Wrapper for each list item and its image */
+.service-item-with-image {
+    display: flex; /* Aligns image and text side by side */
+    align-items: stretch; /* Ensures both image and text are the same height */
+    gap: 1.5rem; /* Space between the image and the text */
+    margin-bottom: 2rem; /* Adds space between each service item */
+}
+
+/* Image container */
+.service-image {
+    flex: 1; /* Image takes up one part of the container */
+    display: flex; /* Ensures the image aligns properly */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+.service-image img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: 100%; /* Ensures the image matches the text container's height */
+    object-fit: cover; /* Keeps the image proportionate while filling its container */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+/* Text container */
+.service-item {
+    flex: 2; /* Text takes up twice as much space as the image */
+    display: flex; /* Makes the text container flexible */
+    flex-direction: column; /* Keeps text items stacked vertically */
+    justify-content: center; /* Centers text vertically within the container */
+}
+
+/* List item styling */
+.service-item ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.service-item ul li {
+    margin: 0;
+    line-height: 1.6; /* Improves readability */
+}
+
+
+/* Flipped version for the second service item */
+.service-item-with-image.flipped {
+    flex-direction: row-reverse; /* Flips the order of image and text */
+}
+
+
+/* Paragraph styling */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify; /* Optional: Justify text to make it more evenly spaced */
+  }
+  
+  /* Optional: Add a max-width and padding to individual paragraphs for more narrow boxes */
+  section p {
+    max-width: 700px;
+    padding: 10px;
+    margin: 10px auto; /* Center paragraphs */
+    border-radius: 4px; /* Optional: Rounded corners */
+  }
+
+a {
+    text-decoration: none;
+    color: #8b5e3c;
+    /* Warm brown for links */
+}
+
+a:hover {
+    color: #6b8e23;
+    /* Olive green for hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #d1d19e;
+    padding: 10px 15px; /* Reduced padding to make the navbar thinner */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 70px; /* Set the header height directly */
+    width: 100%;
+}
+
+/* Brand (logo + title) */
+.brand {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    gap: 10px; /* Space between logo and title */
+}
+
+/* Logo */
+.logo img {
+    max-height: 50px; /* Adjust the logo size */
+    width: auto;
+    object-fit: contain; /* Maintain logo's aspect ratio */
+}
+
+/* Title */
+.brand h1 {
+    margin: 0;
+    font-family: "Ephesis", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a403a; /* Earthy dark brown */
+    line-height: 1;
+}
+
+
+
+/* Navigation */
+.nav {
+    font-family: "Sono", monospace;
+    display: flex;
+    gap: 15px;
+    padding: 10px; /* Removed extra padding */
+    height: 100%; /* Ensure it takes the full height of the header */
+    align-items: center; /* Vertically center the items */
+}
+
+.nav li {
+    list-style: none;
+}
+
+/* Links inside navbar */
+.nav li a {
+    padding: 5px 10px; /* Reduced padding to make the links smaller */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    color: #4a403a; /* Earthy dark brown */
+    font-size: 14px; /* Optional: adjust font size */
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #f4efe2; /* Soft beige for hover effect */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    /* Stack the words vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+}
+
+.title span {
+    display: block;
+    /* Makes each span a block element to stack them */
+}
+
+
+/* Main Content */
+main {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the main content */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4a403a; /* Ensure text color is readable on the background */
+    padding-top: 90px;
+  }
+  
+  main::before {
+    content: ""; /* Necessary for a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('ai-foot.webp'); /* Your background image */
+    background-color: #d1d19e; /* Fallback color */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Control the opacity (0 for transparent, 1 for opaque) */
+    z-index: -1; /* Position the background image behind the content */
+  }  
+
+  /* Overlay color */
+main::after {
+    content: ""; /* Necessary for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(205, 238, 127, 0.3); /* Sage green with opacity (adjust RGBA as needed) */
+    z-index: -1; /* Overlay stays behind content */
+  }
+
+  /* Narrow container for sections */
+section {
+    max-width: 800px; /* Set max-width to make the section more narrow */
+    width: 100%; /* Ensure it takes full width but does not exceed max-width */
+    padding: 20px;
+    background-color: #f8f6f2; /* Optional: light background color for contrast */
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: light shadow around the container */
+    border-radius: 8px; /* Optional: rounded corners for the box */
+  }
+
+.intro,
+.services,
+.booking {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services ul li {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services ul li strong {
+    color: #4a403a;
+}
+
+.services ul li .price {
+    color: #8b5e3c;
+    /* Warm brown for prices */
+}
+
+.services ul li .duration {
+    color: #4a403a;
+    /* Dark brown for durations */
+}
+
+.booking-button {
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #d1d19e;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #556b2f;
+    /* Darker olive green */
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    position: relative; /* Keeps everything contained */
+}
+Share
+
+
+You said:
+/* General Styles */
+body {
+    font-family: "Sono", monospace;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #4a403a;
+    /* Earthy dark brown */
+    background-color: #f5f5eb;
+    /* Soft beige background */
+}
+
+h1 {
+    font-family: "Ephesis", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a403a;
+}
+h2 {
+    font-family: "Ephesis", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4a403a;
+    text-align: center;
+}
+
+/* Intro section styling */
+.intro-container {
+    position: relative; /* Enables text positioning on top */
+    background-image: url("action1.jpeg"); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    padding: 4rem 2rem; /* Adds space inside the container */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    color: white; /* Makes text white for readability */
+    text-align: center; /* Centers text horizontally */
+}
+
+/* Overlay effect for better text visibility */
+.intro-container::before {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adds a semi-transparent dark overlay */
+    border-radius: 10px; /* Matches the container's rounded corners */
+    z-index: 1; /* Ensures the overlay is behind the text */
+}
+
+/* Text content styling */
+.intro-content {
+    position: relative; /* Ensures it appears above the overlay */
+    z-index: 2; /* Places text above the overlay */
+    max-width: 600px; /* Optional: Limits text width */
+    margin: 0 auto; /* Centers text content */
+}
+
+.intro-content h2 {
+    flex: 1; /* Takes one part of the space */
+    font-family: 'Ephesis', serif; /* Ensure your font choice */
+    font-size: 2.5em; /* Adjust as necessary */
+    margin: 10;
+    color: #dbd0c9; /* Match your earthy tones */
+}
+
+.intro-content p {
+    flex: 2; /* Takes two parts of the space */
+    font-family: "Sono", monospace; /* Ensure consistency */
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px;
+    color: #ccc5c0; /* Match your earthy tones */
+}
+
+/* Styling for the image */
+.intro-image img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: auto;
+    border-radius: 10px; /* Optional, adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional, adds a subtle shadow */
+    flex: 1; /* Allows the image to take up equal space */
+    max-width: 400px; /* Controls the size of the image */
+}
+
+/* Main container for the "About" section */
+.about-container {
+    padding: 2rem;
+    line-height: 1.6; /* Improves text readability */
+}
+
+/* Container for image and the first paragraph */
+.about-image-text {
+    display: flex; /* Enables side-by-side layout */
+    align-items: flex-start; /* Aligns the image with the top of the paragraph */
+    gap: 1.5rem; /* Space between the image and the text */
+    margin-bottom: 1.5rem; /* Space below the first paragraph block */
+}
+
+/* Image styling */
+.about-image img {
+    max-width: 150px; /* Limits the image width */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better aesthetics */
+}
+
+/* Styling for the rest of the text */
+.about-container p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Wrapper for each list item and its image */
+.service-item-with-image {
+    display: flex; /* Aligns image and text side by side */
+    align-items: stretch; /* Ensures both image and text are the same height */
+    gap: 1.5rem; /* Space between the image and the text */
+    margin-bottom: 2rem; /* Adds space between each service item */
+}
+
+/* Image container */
+.service-image {
+    flex: 1; /* Image takes up one part of the container */
+    display: flex; /* Ensures the image aligns properly */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+.service-image img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: 100%; /* Ensures the image matches the text container's height */
+    object-fit: cover; /* Keeps the image proportionate while filling its container */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+/* Text container */
+.service-item {
+    flex: 2; /* Text takes up twice as much space as the image */
+    display: flex; /* Makes the text container flexible */
+    flex-direction: column; /* Keeps text items stacked vertically */
+    justify-content: center; /* Centers text vertically within the container */
+}
+
+/* List item styling */
+.service-item ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.service-item ul li {
+    margin: 0;
+    line-height: 1.6; /* Improves readability */
+}
+
+
+/* Flipped version for the second service item */
+.service-item-with-image.flipped {
+    flex-direction: row-reverse; /* Flips the order of image and text */
+}
+
+
+/* Paragraph styling */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify; /* Optional: Justify text to make it more evenly spaced */
+  }
+  
+  /* Optional: Add a max-width and padding to individual paragraphs for more narrow boxes */
+  section p {
+    max-width: 700px;
+    padding: 10px;
+    margin: 10px auto; /* Center paragraphs */
+    border-radius: 4px; /* Optional: Rounded corners */
+  }
+
+a {
+    text-decoration: none;
+    color: #8b5e3c;
+    /* Warm brown for links */
+}
+
+a:hover {
+    color: #6b8e23;
+    /* Olive green for hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #d1d19e;
+    padding: 10px 15px; /* Reduced padding to make the navbar thinner */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 70px; /* Set the header height directly */
+    width: 100%;
+}
+
+/* Brand (logo + title) */
+.brand {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    gap: 10px; /* Space between logo and title */
+}
+
+/* Logo */
+.logo img {
+    max-height: 50px; /* Adjust the logo size */
+    width: auto;
+    object-fit: contain; /* Maintain logo's aspect ratio */
+}
+
+/* Title */
+.brand h1 {
+    margin: 0;
+    font-family: "Ephesis", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a403a; /* Earthy dark brown */
+    line-height: 1;
+}
+
+
+
+/* Navigation */
+.nav {
+    font-family: "Sono", monospace;
+    display: flex;
+    gap: 15px;
+    padding: 10px; /* Removed extra padding */
+    height: 100%; /* Ensure it takes the full height of the header */
+    align-items: center; /* Vertically center the items */
+}
+
+.nav li {
+    list-style: none;
+}
+
+/* Links inside navbar */
+.nav li a {
+    padding: 5px 10px; /* Reduced padding to make the links smaller */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    color: #4a403a; /* Earthy dark brown */
+    font-size: 14px; /* Optional: adjust font size */
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #f4efe2; /* Soft beige for hover effect */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    /* Stack the words vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+}
+
+.title span {
+    display: block;
+    /* Makes each span a block element to stack them */
+}
+
+
+/* Main Content */
+main {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the main content */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4a403a; /* Ensure text color is readable on the background */
+    padding-top: 90px;
+  }
+  
+  main::before {
+    content: ""; /* Necessary for a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('ai-foot.webp'); /* Your background image */
+    background-color: #d1d19e; /* Fallback color */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Control the opacity (0 for transparent, 1 for opaque) */
+    z-index: -1; /* Position the background image behind the content */
+  }  
+
+  /* Overlay color */
+main::after {
+    content: ""; /* Necessary for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(205, 238, 127, 0.3); /* Sage green with opacity (adjust RGBA as needed) */
+    z-index: -1; /* Overlay stays behind content */
+  }
+
+  /* Narrow container for sections */
+section {
+    max-width: 800px; /* Set max-width to make the section more narrow */
+    width: 100%; /* Ensure it takes full width but does not exceed max-width */
+    padding: 20px;
+    background-color: #f8f6f2; /* Optional: light background color for contrast */
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: light shadow around the container */
+    border-radius: 8px; /* Optional: rounded corners for the box */
+  }
+
+.intro,
+.services,
+.booking {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services ul li {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services ul li strong {
+    color: #4a403a;
+}
+
+.services ul li .price {
+    color: #8b5e3c;
+    /* Warm brown for prices */
+}
+
+.services ul li .duration {
+    color: #4a403a;
+    /* Dark brown for durations */
+}
+
+.booking-button {
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #d1d19e;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #556b2f;
+    /* Darker olive green */
+}
+
+/* Testimonials */
+.wrapper {
+    background-color: #d1d19e;
+    position: absolute;
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
+    border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+    display: flex;
+  }
+  .testimonial-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 1.8em 1.2em;
+  }
+  .wrapper button {
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color: #0a69ed;
+    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  button#next {
+    right: -1.1em;
+  }
+  button#prev {
+    left: -1.1em;
+  }
+  .testimonial-container p {
+    color: #8c8c90;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+  }
+  .testimonial-container img {
+    display: block;
+    margin: 1.8em auto 1.25em auto;
+    border-radius: 50%;
+    width: 4.4em;
+  }
+  .testimonial-container h3 {
+    color: #2d3d67;
+    font-size: 1em;
+    text-align: center;
+  }
+  .testimonial-container h6 {
+    color: #bcc4da;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+/* Footer */
+footer {
+    background-color: #d1d19e;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.footer-nav li a {
+    padding: 5px 10px;
+    color: #4a403a;
+    /* Dark brown */
+}
+
+.footer-nav li a:hover {
+    background-color: #f4efe2;
+    /* Soft beige hover effect */
+}
+
+.contact p {
+    margin: 5px 0;
+    color: #4a403a;
+    /* Dark brown for footer text */
+}
+
+/* Font Styles */
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4a403a;
+    /* Earthy dark brown */
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4a403a;
+    /* Earthy dark brown */
+}
+
+.ephesis-regular {
+    font-family: "Ephesis", serif;
+    font-weight: 400;
+    font-size: 2em;
+    /* Larger font size */
+    letter-spacing: 0.02em;
+    /* Add more space between the letters */
+    color: #4a403a;
+    /* Earthy dark brown */
+    position: relative;
+    /* Enable position adjustments */
+    top: 20px;
+    /* Adjust this value to move 'Rooted' closer to 'Reflexology' */
+}
+
+
+.sono-extralight200 {
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "MONO" 0.48;
+    letter-spacing: 0.1em;
+    /* Add more space between the letters */
+    color: #4a403a;
+    /* Earthy dark brown */
+}
+
+.montecarlo-regular {
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+ /* Optional: Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    
+    header {
+      flex-direction: column;
+      text-align: left;
+      padding: 15px;
+      gap: 10px;
+    }
+    
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+    
+    .nav li a {
+      padding: 10px 15px;
+      text-align: left;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .intro-content {
+            flex-direction: column; /* Stacks elements vertically */
+            gap: 10px; /* Adjusts spacing */
+        }
+    
+        .intro-content h2, .intro-content p {
+            flex: unset; /* Removes flexible sizing for stacked elements */
+        }
+    }
+    
+  }
+ChatGPT said:
+It looks like your CSS is well-structured and detailed! However, the last part seems to be cut off—were you about to add more font styles or another section? Let me know if you need help optimizing, fixing issues, or adding new features to your design. 😊
+
+
+
+
+
+
+
+You said:
+How do i make sure the testimonials box is in the testimonials container
+ChatGPT said:
+To ensure the testimonials box is properly placed within the .testimonials container, follow these steps:
+
+1. Wrap Everything in a .testimonials Container
+Make sure your HTML structure is correctly nested like this:
+
+html
+Copy
+Edit
+<section class="testimonials">
+    <div class="wrapper">
+        <div class="testimonial-container">
+            <button id="prev">&lt;</button>
+            <p>"This is a great testimonial!"</p>
+            <img src="testimonial-image.jpg" alt="Testimonial Person">
+            <h3>John Doe</h3>
+            <h6>Customer</h6>
+            <button id="next">&gt;</button>
+        </div>
+    </div>
+</section>
+2. Ensure .wrapper is Positioned Relative to .testimonials
+Modify your CSS to make sure the .wrapper remains inside .testimonials:
+
+css
+Copy
+Edit
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    position: relative; /* Keeps everything contained */
+}
+
+.wrapper {
+    background-color: #d1d19e;
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+    display: flex;
+    position: relative; /* Ensures it stays inside .testimonials */
+    transform: none; /* Remove transform if causing issues */
+    left: auto;
+    top: auto;
+}
+  .testimonial-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 1.8em 1.2em;
+  }
+  .wrapper button {
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color: #0a69ed;
+    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  button#next {
+    right: -1.1em;
+  }
+  button#prev {
+    left: -1.1em;
+  }
+  .testimonial-container p {
+    color: #8c8c90;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+  }
+  .testimonial-container img {
+    display: block;
+    margin: 1.8em auto 1.25em auto;
+    border-radius: 50%;
+    width: 4.4em;
+  }
+  .testimonial-container h3 {
+    color: #2d3d67;
+    font-size: 1em;
+    text-align: center;
+  }
+  .testimonial-container h6 {
+    color: #bcc4da;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+/* Footer */
+footer {
+    background-color: #d1d19e;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.footer-nav li a {
+    padding: 5px 10px;
+    color: #4a403a;
+    /* Dark brown */
+}
+
+.footer-nav li a:hover {
+    background-color: #f4efe2;
+    /* Soft beige hover effect */
+}
+
+.contact p {
+    margin: 5px 0;
+    color: #4a403a;
+    /* Dark brown for footer text */
+}
+
+/* Font Styles */
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4a403a;
+    /* Earthy dark brown */
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4a403a;
+    /* Earthy dark brown */
+}
+
+.ephesis-regular {
+    font-family: "Ephesis", serif;
+    font-weight: 400;
+    font-size: 2em;
+    /* Larger font size */
+    letter-spacing: 0.02em;
+    /* Add more space between the letters */
+    color: #4a403a;
+    /* Earthy dark brown */
+    position: relative;
+    /* Enable position adjustments */
+    top: 20px;
+    /* Adjust this value to move 'Rooted' closer to 'Reflexology' */
+}
+
+
+.sono-extralight200 {
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "MONO" 0.48;
+    letter-spacing: 0.1em;
+    /* Add more space between the letters */
+    color: #4a403a;
+    /* Earthy dark brown */
+}
+
+.montecarlo-regular {
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+ /* Optional: Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    
+    header {
+      flex-direction: column;
+      text-align: left;
+      padding: 15px;
+      gap: 10px;
+    }
+    
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+    
+    .nav li a {
+      padding: 10px 15px;
+      text-align: left;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .intro-content {
+            flex-direction: column; /* Stacks elements vertically */
+            gap: 10px; /* Adjusts spacing */
+        }
+    
+        .intro-content h2, .intro-content p {
+            flex: unset; /* Removes flexible sizing for stacked elements */
+        }
+    }
+    
+  }
