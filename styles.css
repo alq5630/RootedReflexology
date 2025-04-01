@@ -205,7 +205,7 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background-color: #c7baa5;
+    background-color: #d1d19e;
     padding: 10px 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -303,7 +303,7 @@ main::before {
     right: 0;
     bottom: 0;
     background-image: url('ai-foot.webp');
-    background-color: #d4d2c3;
+    background-color: #d1d19e;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -364,7 +364,7 @@ section {
 .booking-button {
     padding: 12px 24px;
     color: #fff;
-    background-color: #d1ba9e;
+    background-color: #d1d19e;
     border: none;
     border-radius: 6px;
     font-size: 1em;
@@ -372,7 +372,7 @@ section {
 }
 
 .booking-button:hover {
-    background-color: #6b502f;
+    background-color: #556b2f;
 }
 
 /* Testimonials */
@@ -570,7 +570,7 @@ a {
 }
 
 a:hover {
-    color: #8a6e55;
+    color: #6b8e23;
 }
 
 ul {
@@ -585,7 +585,7 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background-color: #d1ba9e;
+    background-color: #d1d19e;
     padding: 10px 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -683,7 +683,7 @@ main::before {
     right: 0;
     bottom: 0;
     background-image: url('ai-foot.webp');
-    background-color: #d1bc9e;
+    background-color: #d1d19e;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -743,7 +743,7 @@ section {
 .booking-button {
     padding: 12px 24px;
     color: #fff;
-    background-color: #d1bd9e;
+    background-color: #d1d19e;
     border: none;
     border-radius: 6px;
     font-size: 1em;
@@ -751,12 +751,12 @@ section {
 }
 
 .booking-button:hover {
-    background-color: #6e5d45;
+    background-color: #556b2f;
 }
 
 /* Testimonials */
 .wrapper {
-    background-color: #d1ba9e;
+    background-color: #d1d19e;
     position: absolute;
     width: 80vw;
     max-width: 41em;
@@ -787,7 +787,7 @@ section {
     top: 0;
     bottom: 0;
     border: none;
-    color: #c1e8ac;
+    color: #0a69ed;
     box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
     cursor: pointer;
     border-radius: 50%;
@@ -817,13 +817,13 @@ button#prev {
 }
 
 .testimonial-container h3 {
-    color: #47672d;
+    color: #2d3d67;
     font-size: 1em;
     text-align: center;
 }
 
 .testimonial-container h6 {
-    color: #cddabc;
+    color: #bcc4da;
     font-size: 0.9em;
     letter-spacing: normal;
     font-weight: 400;
@@ -832,7 +832,7 @@ button#prev {
 
 /* Footer */
 footer {
-    background-color: #cfc7a5;
+    background-color: #d1d19e;
     padding: 20px;
     text-align: center;
 }
@@ -910,7 +910,7 @@ footer {
 }
 
 .wrapper {
-    background-color: #d1bf9e;
+    background-color: #d1d19e;
     width: 80vw;
     max-width: 41em;
     min-height: 25em;
@@ -941,7 +941,7 @@ footer {
     top: 0;
     bottom: 0;
     border: none;
-    color: #c6edab;
+    color: #0a69ed;
     box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
     cursor: pointer;
     border-radius: 50%;
@@ -971,13 +971,13 @@ button#prev {
 }
 
 .testimonial-container h3 {
-    color: #3f672d;
+    color: #2d3d67;
     font-size: 1em;
     text-align: center;
 }
 
 .testimonial-container h6 {
-    color: #cddabc;
+    color: #bcc4da;
     font-size: 0.9em;
     letter-spacing: normal;
     font-weight: 400;
@@ -986,7 +986,7 @@ button#prev {
 
 /* Footer */
 footer {
-    background-color: #d1c5ab;
+    background-color: #d1d19e;
     padding: 20px;
     text-align: center;
 }
