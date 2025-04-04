@@ -351,6 +351,12 @@ header {
     width: 100%;
 }
 
+.span.Cedarville.Cursive {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Main Content */
 main {
     position: relative;
@@ -531,6 +537,15 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+
+.cedarville {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/*Testimonial Styling*/
 
 .testimonials {
     display: flex;
