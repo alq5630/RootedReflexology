@@ -199,14 +199,11 @@ ul {
 /* Title */
 .brand h1 {
     margin: 0;
-    font-family: "Lora", serif;
-    font-size: 24px;
-    font-weight: bold;
+    font-family: "Sacramento", cursive;
+    font-size: 32px;
     color: #4a403a;
-    line-height: 1;
+    line-height: .5;
 }
-
-
 
 /* Navigation */
 .nav {
@@ -543,6 +540,12 @@ footer {
     font-weight: 400;
     font-style: normal;
   }
+
+  .sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
   
 
 /*Testimonial Styling*/
