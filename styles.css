@@ -1,24 +1,17 @@
 /* General Styles */
-body {
-    font-family: "Sono", monospace;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    color: #4a403a;
-    background-color: #f5f5eb;
-}
 
 h1 {
-    font-family: "Ephesis", serif;
+    font-family: "Lora", serif;
     font-size: 32px;
     font-weight: bold;
     color: #4a403a;
 }
 
 h2 {
-    font-family: "Ephesis", serif;
+    font-family: "Lora", serif;
     font-size: 40px;
     font-weight: bold;
+    font-style: italic;
     color: #4a403a;
     text-align: center;
 }
@@ -57,17 +50,10 @@ h2 {
     margin: 0 auto;
 }
 
-.intro-content h2 {
-    flex: 1;
-    font-family: 'Ephesis', serif;
-    font-size: 2.5em;
-    margin: 10;
-    color: #dbd0c9;
-}
 
 .intro-content p {
     flex: 2;
-    font-family: "Sono", monospace;
+    font-family: "Lora", serif;
     font-size: 1em;
     line-height: 1.6;
     margin: 10px;
@@ -105,11 +91,6 @@ h2 {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Styling for the rest of the text */
-.about-container p {
-    margin-bottom: 1rem;
 }
 
 .about-container span {
@@ -159,6 +140,7 @@ h2 {
 .service-item ul li {
     margin: 0;
     line-height: 1.6;
+    font-weight: 100;
 }
 
 
@@ -199,21 +181,6 @@ ul {
     margin: 0;
 }
 
-/* Header */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: #d1d19e;
-    padding: 10px 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 70px;
-    width: 100%;
-}
 
 /* Brand (logo + title) */
 .brand {
@@ -232,7 +199,7 @@ header {
 /* Title */
 .brand h1 {
     margin: 0;
-    font-family: "Ephesis", serif;
+    font-family: "Lora", serif;
     font-size: 24px;
     font-weight: bold;
     color: #4a403a;
@@ -243,7 +210,7 @@ header {
 
 /* Navigation */
 .nav {
-    font-family: "Sono", monospace;
+    font-family: "Lora", serif;
     display: flex;
     gap: 15px;
     padding: 10px;
@@ -280,48 +247,6 @@ header {
     display: block;
 }
 
-
-/* Main Content */
-main {
-    position: relative;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #4a403a;
-    padding-top: 90px;
-}
-
-main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('ai-foot.webp');
-    background-color: #d1d19e;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: -1;
-}
-
-/* Overlay color */
-main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(205, 238, 127, 0.3);
-    z-index: -1;
-}
 
 /* Narrow container for sections */
 section {
@@ -372,7 +297,7 @@ section {
 }
 
 .booking-button:hover {
-    background-color: #556b2f;
+    background-color: #E7BC91;
 }
 
 /* Testimonials */
@@ -386,197 +311,28 @@ section {
 
 /* General Styles */
 body {
-    font-family: "Sono", monospace;
+    font-family: "Lora", serif;
     font-weight: bold;
     margin: 0;
     padding: 0;
-    color: #4a403a;
-    background-color: #f5f5eb;
-}
-
-h1 {
-    font-family: "Ephesis", serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #4a403a;
-}
-
-h2 {
-    font-family: "Ephesis", serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #4a403a;
-    text-align: center;
-}
-
-/* Intro section styling */
-.intro-container {
-    position: relative;
-    background-image: url("action1.jpeg");
-    background-size: cover;
-    background-position: center;
-    padding: 4rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
-    text-align: center;
-}
-
-/* Overlay effect for better text visibility */
-.intro-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    z-index: 1;
-}
-
-/* Text content styling */
-.intro-content {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-    margin: 0 auto;
+    background-color: #ccccba;
 }
 
 .intro-content h2 {
     flex: 1;
-    font-family: 'Ephesis', serif;
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-weight: bold;
     font-size: 2.5em;
     margin: 10;
     color: #dbd0c9;
-}
-
-.intro-content p {
-    flex: 2;
-    font-family: "Sono", monospace;
-    font-size: 1em;
-    line-height: 1.6;
-    margin: 10px;
-    color: #ccc5c0;
-}
-
-/* Styling for the image */
-.intro-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    max-width: 400px;
-}
-
-/* Main container for the "About" section */
-.about-container {
-    margin: 0;
-    padding: 2rem;
-    line-height: 1.4;
-}
-
-/* Container for image and the first paragraph */
-.about-image-text {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Image styling */
-.about-image img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 /* Styling for the rest of the text */
 .about-container p {
     margin-bottom: 1rem;
-}
-
-/* Wrapper for each list item and its image */
-.service-item-with-image {
-    display: flex;
-    align-items: stretch;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-/* Image container */
-.service-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.service-image img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Text container */
-.service-item {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* List item styling */
-.service-item ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.service-item ul li {
-    margin: 0;
-    line-height: 1.6;
-}
-
-
-/* Flipped version for the second service item */
-.service-item-with-image.flipped {
-    flex-direction: row-reverse;
-}
-
-
-/* Paragraph styling */
-p {
-    font-size: 1em;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* Optional: Add a max-width and padding to individual paragraphs for more narrow boxes */
-section p {
-    max-width: 700px;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 4px;
-}
-
-a {
-    text-decoration: none;
-    color: #8b5e3c;
-}
-
-a:hover {
-    color: #6b8e23;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    font-weight:400;
 }
 
 /* Header */
@@ -585,7 +341,7 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background-color: #d1d19e;
+    background-color: rgb(207 183 148 / 100%);
     padding: 10px 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -594,72 +350,6 @@ header {
     height: 70px;
     width: 100%;
 }
-
-/* Brand (logo + title) */
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Logo */
-.logo img {
-    max-height: 50px;
-    width: auto;
-    object-fit: contain;
-}
-
-/* Title */
-.brand h1 {
-    margin: 0;
-    font-family: "Ephesis", serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #4a403a;
-    line-height: 1;
-}
-
-
-
-/* Navigation */
-.nav {
-    font-family: "Sono", monospace;
-    display: flex;
-    gap: 15px;
-    padding: 10px;
-    height: 100%;
-    align-items: center;
-}
-
-.nav li {
-    list-style: none;
-}
-
-/* Links inside navbar */
-.nav li a {
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    color: #4a403a;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.nav li a:hover {
-    background-color: #f4efe2;
-}
-
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.title span {
-    display: block;
-}
-
 
 /* Main Content */
 main {
@@ -699,7 +389,7 @@ main::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(205, 238, 127, 0.3);
+    background-color: rgba(226, 188, 106, 0.3);
     z-index: -1;
 }
 
@@ -751,7 +441,8 @@ section {
 }
 
 .booking-button:hover {
-    background-color: #556b2f;
+    color: #fcfcfc;
+    background-color: #3e5318c4;
 }
 
 /* Testimonials */
@@ -769,66 +460,6 @@ section {
     display: flex;
 }
 
-.testimonial-container {
-    width: 85%;
-    height: 100%;
-    position: relative;
-    margin: auto;
-    padding: 1.8em 1.2em;
-}
-
-.wrapper button {
-    font-size: 1.8em;
-    height: 2.2em;
-    width: 2.2em;
-    background-color: #ffffff;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    border: none;
-    color: #0a69ed;
-    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-button#next {
-    right: -1.1em;
-}
-
-button#prev {
-    left: -1.1em;
-}
-
-.testimonial-container p {
-    color: #8c8c90;
-    text-align: center;
-    font-size: 0.9em;
-    line-height: 2em;
-    letter-spacing: normal;
-}
-
-.testimonial-container img {
-    display: block;
-    margin: 1.8em auto 1.25em auto;
-    border-radius: 50%;
-    width: 4.4em;
-}
-
-.testimonial-container h3 {
-    color: #2d3d67;
-    font-size: 1em;
-    text-align: center;
-}
-
-.testimonial-container h6 {
-    color: #bcc4da;
-    font-size: 0.9em;
-    letter-spacing: normal;
-    font-weight: 400;
-    text-align: center;
-}
 
 /* Footer */
 footer {
@@ -910,7 +541,7 @@ footer {
 }
 
 .wrapper {
-    background-color: #d1d19e;
+    background-color: #a8876e;
     width: 80vw;
     max-width: 41em;
     min-height: 25em;
@@ -929,6 +560,7 @@ footer {
     position: relative;
     margin: auto;
     padding: 1.8em 1.2em;
+    background-color: #a8876e;
 }
 
 .wrapper button {
@@ -941,8 +573,8 @@ footer {
     top: 0;
     bottom: 0;
     border: none;
-    color: #0a69ed;
-    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    color: #11310d;
+    box-shadow: 0 0 1em rgba(207, 183, 148);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -956,7 +588,7 @@ button#prev {
 }
 
 .testimonial-container p {
-    color: #8c8c90;
+    color: #174619;
     text-align: center;
     font-size: 0.9em;
     line-height: 2em;
@@ -971,13 +603,13 @@ button#prev {
 }
 
 .testimonial-container h3 {
-    color: #2d3d67;
+    color: #3d672d;
     font-size: 1em;
     text-align: center;
 }
 
 .testimonial-container h6 {
-    color: #bcc4da;
+    color: #c5dabc;
     font-size: 0.9em;
     letter-spacing: normal;
     font-weight: 400;
@@ -1054,6 +686,20 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .lora-italic {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /* Change layout for screens smaller than 768px (Tablets, Mobile) */
 
