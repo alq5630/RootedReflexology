@@ -101,7 +101,8 @@ ul {
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    gap: 0;
+    word-spacing: -0.5rem;
+
 }
 
 .brand h1 {
@@ -116,9 +117,8 @@ ul {
     display: inline-block;
     margin: 0;
     padding: 0;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.02em;
 }
-
 
 /* Navigation */
 .nav {
