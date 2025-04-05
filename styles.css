@@ -1,5 +1,38 @@
 /* General Styles */
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(207 183 148 / 100%);
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+    width: 100%;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #ccccba;
+}
+
+section {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f6f2;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 h1 {
     font-family: "Lora", serif;
     font-size: 32px;
@@ -16,141 +49,6 @@ h2 {
     text-align: center;
 }
 
-/* Intro section styling */
-.intro-container {
-    position: relative;
-    background-image: url("action1.jpeg");
-    background-size: cover;
-    background-position: center;
-    padding: 4rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
-    text-align: center;
-}
-
-/* Overlay effect for better text visibility */
-.intro-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    z-index: 1;
-}
-
-/* Text content styling */
-.intro-content {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-.intro-content p {
-    flex: 2;
-    font-family: "Lora", serif;
-    font-size: 1em;
-    line-height: 1.6;
-    margin: 10px;
-    color: #ccc5c0;
-}
-
-/* Styling for the image */
-.intro-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    max-width: 400px;
-}
-
-/* Main container for the "About" section */
-.about-container {
-    padding: 2rem;
-    margin: 0;
-    line-height: 1.4;
-}
-
-/* Container for image and the first paragraph */
-.about-image-text {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Image styling */
-.about-image img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.about-container span {
-    white-space: nowrap;
-    /* Prevent unwanted wrapping of inline content */
-}
-
-/* Wrapper for each list item and its image */
-.service-item-with-image {
-    display: flex;
-    align-items: stretch;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-/* Image container */
-.service-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.service-image img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Text container */
-.service-item {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* List item styling */
-.service-item ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.service-item ul li {
-    margin: 0;
-    line-height: 1.6;
-    font-weight: 100;
-}
-
-
-/* Flipped version for the second service item */
-.service-item-with-image.flipped {
-    flex-direction: row-reverse;
-}
-
-
-/* Paragraph styling */
 p {
     word-spacing: normal;
     font-size: 1em;
@@ -158,7 +56,6 @@ p {
     text-align: justify;
 }
 
-/* Optional: Add a max-width and padding to individual paragraphs for more narrow boxes */
 section p {
     max-width: 700px;
     padding: 10px;
@@ -182,6 +79,8 @@ ul {
 }
 
 
+/* Header Styling */
+
 /* Brand (logo + title) */
 .brand {
     display: flex;
@@ -197,13 +96,26 @@ ul {
 }
 
 /* Title */
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
 .brand h1 {
     margin: 0;
-    font-family: "playfair-display", cursive;
-    font-size: 32px;
+    padding: 0;
     color: #4a403a;
-    line-height: .5;
+    font-family: "playfair-display", cursive;
+    font-size: 40px;
 }
+
+.title span {
+    display: inline-block;
+}
+
 
 /* Navigation */
 .nav {
@@ -233,126 +145,6 @@ ul {
     background-color: #f4efe2;
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.title span {
-    display: block;
-}
-
-
-/* Narrow container for sections */
-section {
-    max-width: 800px;
-    width: 100%;
-    padding: 20px;
-    background-color: #f8f6f2;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.intro,
-.services,
-.booking {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.services ul li {
-    margin: 20px 0;
-    padding: 15px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.services ul li strong {
-    color: #4a403a;
-}
-
-.services ul li .price {
-    color: #8b5e3c;
-}
-
-.services ul li .duration {
-    color: #4a403a;
-}
-
-.booking-button {
-    padding: 12px 24px;
-    color: #fff;
-    background-color: #d1d19e;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.booking-button:hover {
-    background-color: #E7BC91;
-}
-
-/* Testimonials */
-.testimonials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    position: relative;
-}
-
-/* General Styles */
-body {
-    font-family: "Lora", serif;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    background-color: #ccccba;
-}
-
-.intro-content h2 {
-    flex: 1;
-    font-family: "Lora", serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2.5em;
-    margin: 10;
-    color: #dbd0c9;
-    text-align: center;
-}
-
-/* Styling for the rest of the text */
-.about-container p {
-    margin-bottom: 1rem;
-    font-weight:400;
-}
-
-/* Header */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: rgb(207 183 148 / 100%);
-    padding: 10px 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 70px;
-    width: 100%;
-}
-
-.span.Cedarville.Cursive {
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
 
 /* Main Content */
 main {
@@ -396,22 +188,99 @@ main::after {
     z-index: -1;
 }
 
-section {
-    max-width: 800px;
-    width: 100%;
-    padding: 20px;
-    background-color: #f8f6f2;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+
+/* Intro */
+.intro-container {
+    position: relative;
+    background-image: url("action1.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
 }
 
-.intro,
-.services,
-.booking {
-    text-align: center;
-    margin-bottom: 40px;
+.intro-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 1;
 }
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    flex: 1;
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 10;
+    color: #dbd0c9;
+    text-align: center;
+}
+
+.intro-content p {
+    flex: 2;
+    font-family: "Lora", serif;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px;
+    color: #ccc5c0;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    max-width: 400px;
+}
+
+/* About */
+.about-container {
+    padding: 2rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.about-container p {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.about-image-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-container span {
+    white-space: nowrap;
+}
+
+/* Services */
 
 .services ul li {
     margin: 20px 0;
@@ -433,6 +302,54 @@ section {
     color: #4a403a;
 }
 
+
+.service-item-with-image {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-item {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item ul li {
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 100;
+}
+
+.service-item-with-image.flipped {
+    flex-direction: row-reverse;
+}
+
+/* Booking */
+
 .booking-button {
     padding: 12px 24px;
     color: #fff;
@@ -448,108 +365,17 @@ section {
     background-color: #3e5318c4;
 }
 
-/* Testimonials */
-.wrapper {
-    background-color: #d1d19e;
-    position: absolute;
-    width: 80vw;
-    max-width: 41em;
-    min-height: 25em;
-    border-radius: 0.6em;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
-    display: flex;
-}
+/* Intro, Services, and Booking */
 
-
-/* Footer */
-footer {
-    background-color: #d1d19e;
-    padding: 20px;
+.intro,
+.services,
+.booking {
     text-align: center;
-}
-
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 15px 0;
-}
-
-.footer-nav li a {
-    padding: 5px 10px;
-    color: #4a403a;
-}
-
-.footer-nav li a:hover {
-    background-color: #f4efe2;
-}
-
-.contact p {
-    margin: 5px 0;
-    color: #4a403a;
-}
-
-/* Font Styles */
-.play-regular {
-    font-family: "Play", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #4a403a;
-}
-
-.play-bold {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #4a403a;
-}
-
-.ephesis-regular {
-    font-family: "Ephesis", serif;
-    font-weight: 400;
-    font-size: 2em;
-    letter-spacing: normal;
-    color: #4a403a;
-    position: relative;
-    top: 20px;
+    margin-bottom: 40px;
 }
 
 
-.sono-extralight200 {
-    font-family: "Sono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-variation-settings:
-        "MONO" 0.48;
-    letter-spacing: normal;
-    color: #4a403a;
-}
-
-.montecarlo-regular {
-    font-family: "MonteCarlo", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cedarville {
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .sacramento-regular {
-    font-family: "Sacramento", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }  
-  
-
-/*Testimonial Styling*/
-
+/* Testimonials */
 .testimonials {
     display: flex;
     justify-content: center;
@@ -662,6 +488,7 @@ footer {
     color: #4a403a;
 }
 
+
 /* Font Styles */
 .play-regular {
     font-family: "Play", sans-serif;
@@ -687,7 +514,6 @@ footer {
     top: 20px;
 }
 
-
 .sono-extralight200 {
     font-family: "Sono", monospace;
     font-optical-sizing: auto;
@@ -705,31 +531,41 @@ footer {
     font-style: normal;
 }
 
+.cedarville {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .lora {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .lora-italic {
+.lora-italic {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-  }
+}
 
-  
 .playfair-display {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-/* Change layout for screens smaller than 768px (Tablets, Mobile) */
+/* Smaller Screens */
 
-/* For mobile devices */
 @media screen and (max-width: 768px) {
     p {
         text-align: left;
@@ -737,33 +573,25 @@ footer {
 
     section p {
         word-wrap: break-word;
-    }    
+    }
 
     .about-image-text {
         flex-direction: column;
-        /* Stack the image and text vertically */
         align-items: center;
-        /* Center the items vertically */
         text-align: center;
-        /* Center the text */
         word-spacing: normal;
-        /* Resets any custom word-spacing */
         letter-spacing: normal;
-        /* Resets any custom letter-spacing */
     }
 
     .about-image {
         margin-bottom: 1.5rem;
-        /* Space between the image and the paragraph */
     }
 
     .about-image img {
         max-width: 100%;
-        /* Ensure the image scales down on small screens */
         height: auto;
     }
 
-    /* Optional: Adjust text font size for mobile */
     .about h2 {
         font-size: 24px;
     }
@@ -772,15 +600,12 @@ footer {
         font-size: 16px;
         line-height: 1.6;
         word-spacing: normal;
-        /* Resets any custom word-spacing */
         letter-spacing: normal;
-        /* Resets any custom letter-spacing */
     }
 }
 
 @media screen and (max-width: 767px) {
 
-    /* Stack the navbar items vertically */
     .nav {
         display: flex;
         flex-direction: column;
@@ -801,7 +626,6 @@ footer {
         font-size: 18px;
     }
 
-    /* If you want to make the navbar collapse when scrolling */
     .nav {
         position: relative;
         top: 0;
@@ -810,15 +634,12 @@ footer {
         background-color: #333;
         z-index: 999;
         display: none;
-        /* Hidden by default */
     }
 
     .nav.active {
         display: block;
-        /* Show when active */
     }
 
-    /* For responsive toggler button */
     .menu-toggle {
         display: block;
         background-color: #333;
@@ -830,16 +651,12 @@ footer {
     }
 }
 
-/* Toggle button for mobile view */
 @media screen and (max-width: 767px) {
     .menu-toggle {
         display: block;
     }
 }
 
-
-/* For the page content to adjust when navbar becomes sticky */
 body {
     padding-top: 50px;
-    /* Adjust this to match the height of your navbar */
 }
