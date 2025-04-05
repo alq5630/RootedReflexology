@@ -465,7 +465,7 @@ button#prev {
 
 /* Footer */
 footer {
-    background-color: #d1d19e;
+    background-color: rgb(207 183 148 / 100%);
     padding: 20px;
     text-align: center;
 }
@@ -616,6 +616,13 @@ footer {
         width: 100%;
         padding: 0;
         margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 999;
+        display: none;
     }
 
     .nav li {
@@ -627,16 +634,6 @@ footer {
     .nav li a {
         padding: 12px;
         font-size: 18px;
-    }
-
-    .nav {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        z-index: 999;
-        display: none;
     }
 
     .nav.active {
@@ -652,14 +649,12 @@ footer {
         padding: 10px;
         cursor: pointer;
     }
-}
 
-@media screen and (max-width: 767px) {
     .menu-toggle {
         display: block;
     }
-}
 
-body {
-    padding-top: 50px;
+    body {
+        padding-top: 50px;
+    }
 }
