@@ -356,7 +356,7 @@ main::after {
 .booking-button {
     padding: 12px 24px;
     color: #fff;
-    background-color: #d1d19e;
+    background-color: #3e5318c4;
     border: none;
     border-radius: 6px;
     font-size: 1em;
@@ -365,7 +365,7 @@ main::after {
 
 .booking-button:hover {
     color: #fcfcfc;
-    background-color: #3e5318c4;
+    background-color: #658627c4;
 }
 
 /* Intro, Services, and Booking */
