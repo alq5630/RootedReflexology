@@ -171,7 +171,7 @@ main::before {
     right: 0;
     bottom: 0;
     background-image: url('ai-foot.webp');
-    background-color: #d1d19e;
+    background-color: rgb(207 183 148 / 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ main::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(226, 188, 106, 0.3);
+    background-color: rgb(207 183 148 / 60%);
     z-index: -1;
 }
 
@@ -650,7 +650,9 @@ footer {
         padding-top: 50px;
     }
 
-    p, .about p, .service-item ul li {
+    p,
+    .about p,
+    .service-item ul li {
         font-size: 1.1em;
     }
 }
