@@ -333,6 +333,7 @@ main::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: .75em;
 }
 
 .service-item ul {
@@ -656,3 +657,4 @@ footer {
         font-size: 1.1em;
     }
 }
+
